@@ -1,18 +1,10 @@
 # Commands-Reminder
 
-https://git02.smartosc.com
-118.70.67.134  git02.smartosc.com
-113.190.242.76  git02.smartosc.com
+##Git Commands
 
-git@git02.smartosc.com:phupt/friso.git
-git@git02.smartosc.com:phupt/friso_sg.git
-git@git02.smartosc.com:phupt/friso_id.git
-git@git02.smartosc.com:phupt/friso_vn.git
-
-//==================================
-// Git Commands
-//==================================
-git clone --branch sosc-theme --recursive https://quanlh605@bitbucket.org/balanceinternet/cargo-crew.git Path\to\clone
+```
+git clone --branch <branch_name> --recursive username@host/repo.git <path\to\folder>
+```
 
 git -c diff.mnemonicprefix=false -c core.quotepath=false fetch origin
 From https://bitbucket.org/balanceinternet/cargo-crew
