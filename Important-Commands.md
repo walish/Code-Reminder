@@ -2,29 +2,19 @@
 
 ##Git Commands
 
+Clone:
 ```
 git clone --branch <branch_name> --recursive username@host/repo.git <path\to\folder>
 ```
 
-git -c diff.mnemonicprefix=false -c core.quotepath=false fetch origin
-From https://bitbucket.org/balanceinternet/cargo-crew
-   12b4a51..cfc574f  sosc-theme -> origin/sosc-theme
-
-git -c diff.mnemonicprefix=false -c core.quotepath=false pull origin sosc-theme
-
-GIT - Ignore a file
+Ignore a file:
+```
 git update-index --assume-unchanged path/to/file
 git update-index --no-assume-unchanged path/to/file
-
-ECG - run code review
-C:\php>phpcs --standard=C:xampp\php\pear\PHP\Ecg Path\To\Code\Folder
-C:\php>phpcs --standard=C:xampp\php\pear\PHP\Ecg D:\xampp\htdocs\tpl_magento\app\code\local\SM\OrderProcess
-
-Connect to git
-ssh -T git@git02.smartosc.com
+```
 
 SSH Keygen:
-/* Move to /home */
+```
 cd ~
 ssh-keygen
 /* 
@@ -35,13 +25,18 @@ ssh-keygen
 eval "$(ssh-agent -s)" // for linux
 eval $(ssh-agent -s) // For windows
 ssh-add ~/.ssh/id_rsa
+```
 
+================================ MySQL commands ================================
 
-//================================
-// MySQL commands
-//================================
 Import DB:
+```
 mysql -u username -p database_name < file.sql
+```
+
+```
+zcat /path/to/file.sql.gz | mysql -u 'host' -p db_name
+```
 
 Connect DB:
 mysql --host=amd1.smartosc.com --user=devtop --password devtop mydb
