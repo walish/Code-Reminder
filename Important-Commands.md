@@ -27,38 +27,47 @@ eval $(ssh-agent -s) // For windows
 ssh-add ~/.ssh/id_rsa
 ```
 
-================================ MySQL commands ================================
+##MySQL commands
 
 Import DB:
 ```
 mysql -u username -p database_name < file.sql
-```
 
-```
+/* For sql.gz file */
 zcat /path/to/file.sql.gz | mysql -u 'host' -p db_name
 ```
 
 Connect DB:
-mysql --host=amd1.smartosc.com --user=devtop --password devtop mydb
-mysql -h localhost -u myname -pmypass mydb
+```
+mysql --host=hostname --user=user --password mypass db_name
+mysql -h hostname -u user -pmypass db_name
+```
 
-MongoDB
-Run MongoDB: 
-C:\mongodb\bin\mongod.exe --dbpath d:\test\mongodb\data
-C:\mongodb\bin\mongod -f mongod.cfg
-Connect to MongoDB:
-C:\mongodb\bin\mongo.
+MySQL Dump DB:
 
-MySQL Dump DB
-- an entire DB: mysqldump -u [uname] -p[pass] db_name > db_backup.sql
-- all DBs: mysqldump -h [host] -u [uname] -p[pass] --all-databases > all_db_backup.sql
-- specific tables within a DB: mysqldump -u [uname] -p[pass] db_name table1 table2 > table_backup.sql
-- auto-compressing the output using gzip: mysqldump -u [uname] -p[pass] db_name | gzip > db_backup.sql.gz
+-an entire DB: 
+```
+mysqldump -u [uname] -p[pass] db_name > db_backup.sql
+```
+- all DBs: 
+```
+mysqldump -h [host] -u [uname] -p[pass] --all-databases > all_db_backup.sql
+```
+- specific tables within a DB: 
+```
+mysqldump -u [uname] -p[pass] db_name table1 table2 > table_backup.sql
+```
+- auto-compressing the output using gzip: 
+```
+mysqldump -u [uname] -p[pass] db_name | gzip > db_backup.sql.gz
+```
 
-
+Create DB with collation:
+```
 CREATE DATABASE mydb
   DEFAULT CHARACTER SET utf8
   DEFAULT COLLATE utf8_general_ci;
+```
 
 //================================
 // SSH Commands
