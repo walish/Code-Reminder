@@ -71,7 +71,7 @@ CREATE DATABASE mydb
 
 ##Magento 2 Commands
 
-- First Setup Script
+First Setup Script
 ```
 php bin/magento setup:install 
 	--base-url=http://magento2.local/ 
@@ -90,7 +90,7 @@ php bin/magento setup:install
 	--use-rewrites=1
 ```
 
-- Change permission
+Change permission
 ```
 HTTPDUSER=`ps axo user,comm | grep -E '[a]pache|[h]ttpd|[_]www|[w]ww-data|[n]ginx' | grep -v root | head -1 | cut -d\  -f1`;
 sudo setfacl -R -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX var pub/static pub/media app/etc;
@@ -98,6 +98,11 @@ sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX var pub/static pub/medi
 chmod u+x bin/magento
 ```
 
+Generate urn highlighter for PHPStorm
+
+```
+magento dev:urn-catalog:generate .idea/misc.xml
+```
 
 ##Linux Commands
 
