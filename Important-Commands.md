@@ -139,12 +139,12 @@ tar -zxvf backup.tar.gz
 ```
 
 - Setup Crontab
+```
 crontab -l  #list
 crontab -e  #edit
 
-*/1 * * * * /bin/sh /home/cloudpanel/htdocs/shop-test.friso.com.sg/cron.sh
-/usr/bin/wget -O - -q -t http://test-shop.friso.com.vn/backup_fc.tar.gz
-
-
+* * * * * /bin/sh /path/to/file.sh
+* * * * * /usr/bin/wget -O - -q -t http://host.com/file.txt
+```
  
  
