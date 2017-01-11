@@ -106,6 +106,11 @@ magento dev:urn-catalog:generate .idea/misc.xml
 
 ##Linux Commands
 
+- Remove PHP packages
+```
+sudo aptitude purge `dpkg -l | grep php| awk '{print $2}' |tr "\n" " "`
+```
+
 - Change Permission for run PHP
 ```
 find . -type d -exec chmod 755 {} \;
