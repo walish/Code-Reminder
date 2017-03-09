@@ -64,9 +64,7 @@ mysqldump -u [uname] -p[pass] db_name | gzip > db_backup.sql.gz
 
 Create DB with collation:
 ```
-CREATE DATABASE mydb
-  DEFAULT CHARACTER SET utf8
-  DEFAULT COLLATE utf8_general_ci;
+CREATE DATABASE mydb DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
 ```
 
 ##Magento 2 Commands
