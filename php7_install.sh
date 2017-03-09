@@ -16,4 +16,6 @@ sudo apt-get install -y php7.0
 # Get php version, e.g: 7.0 | 7.1
 PHP_VERSION=$(php -r "echo PHP_MAJOR_VERSION.'.'.PHP_MINOR_VERSION;")
 
-sudo apt-get install php${PHP_VERSION}-mysql php${PHP_VERSION}-curl php${PHP_VERSION}-xml php${PHP_VERSION}-mcrypt php${PHP_VERSION}-intl php${PHP_VERSION}-mbstring
+sudo apt-get install php${PHP_VERSION}-mysql php${PHP_VERSION}-curl php${PHP_VERSION}-xml \
+php${PHP_VERSION}-mcrypt php${PHP_VERSION}-intl php${PHP_VERSION}-mbstring \
+php${PHP_VERSION}-gd php${PHP_VERSION}-zip php${PHP_VERSION}-bcmath
