@@ -1,6 +1,6 @@
 # Commands-Reminder
 
-##Git Commands
+## Git Commands
 
 Clone:
 ```
@@ -27,7 +27,7 @@ eval $(ssh-agent -s) // For windows
 ssh-add ~/.ssh/id_rsa
 ```
 
-##MySQL commands
+## MySQL commands
 
 Import DB:
 ```
