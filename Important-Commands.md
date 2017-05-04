@@ -34,8 +34,10 @@ Import DB:
 mysql -u username -p database_name < file.sql
 
 /* For sql.gz file */
-zcat /path/to/file.sql.gz | mysql -u 'host' -p db_name
-```
+zcat /path/to/file.sql.gz | mysql -uusername -p db_name
+
+/* Import .tar.gz gzipped mysql dumps in one line */
+tar -xzOf path/to/your_db_dump.sql.tar.gz | mysql -uusername -p db_name
 
 Connect DB:
 ```
