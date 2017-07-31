@@ -27,8 +27,9 @@ eval $(ssh-agent -s) // For windows
 ssh-add ~/.ssh/id_rsa
 ```
 
+Get commits from custom-branch 
 ```
-git diff-tree  -r --no-commit-id --name-only LAF-2-new production | xargs zip -r pat2.zip
+git diff-tree  -r --no-commit-id --name-only custom-branch master | xargs zip -r pat2.zip
 ```
 
 ## MySQL commands
