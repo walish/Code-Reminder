@@ -27,6 +27,10 @@ eval $(ssh-agent -s) // For windows
 ssh-add ~/.ssh/id_rsa
 ```
 
+```
+git diff-tree  -r --no-commit-id --name-only LAF-2-new production | xargs zip -r pat2.zip
+```
+
 ## MySQL commands
 
 Import DB:
