@@ -43,6 +43,10 @@ zcat /path/to/file.sql.gz | mysql -uusername -p db_name
 
 /* Import .tar.gz gzipped mysql dumps in one line */
 tar -xzOf path/to/your_db_dump.sql.tar.gz | mysql -uusername -p db_name
+
+/* Incase need to extend max_heap_table_size/tmp_table_size  */
+SET GLOBAL tmp_table_size = 1024 * 1024 * 1024 * 2;
+SET GLOBAL max_heap_table_size = 1024 * 1024 * 1024 * 2;
 ```
 
 Connect DB:
@@ -75,7 +79,7 @@ Create DB with collation:
 CREATE DATABASE mydb DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
 ```
 
-##Magento 2 Commands
+## Magento 2 Commands
 
 First Setup Script
 ```
@@ -110,7 +114,7 @@ Generate urn highlighter for PHPStorm
 magento dev:urn-catalog:generate .idea/misc.xml
 ```
 
-##Linux Commands
+## Linux Commands
 
 - Remove PHP packages
 ```
