@@ -20,7 +20,7 @@ sudo apt-get install php${PHP_VERSION}-mysql php${PHP_VERSION}-curl php${PHP_VER
 php${PHP_VERSION}-mcrypt php${PHP_VERSION}-intl php${PHP_VERSION}-mbstring \
 php${PHP_VERSION}-gd php${PHP_VERSION}-zip php${PHP_VERSION}-bcmath php${PHP_VERSION}-soap
 
-# For PHP above version 7.2, remove ```mcrypt```
+# For PHP above version 7.2, remove `mcrypt`
 sudo apt-get install php${PHP_VERSION}-mysql php${PHP_VERSION}-curl php${PHP_VERSION}-xml \
 php${PHP_VERSION}-intl php${PHP_VERSION}-mbstring \
 php${PHP_VERSION}-gd php${PHP_VERSION}-zip php${PHP_VERSION}-bcmath php${PHP_VERSION}-soap
