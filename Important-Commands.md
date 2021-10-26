@@ -81,7 +81,7 @@ CREATE DATABASE mydb DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
 
 ## Magento 2 Commands
 
-First Setup Script
+First Setup Script For Magento 2.4
 ```
 php bin/magento setup:install 
 	--base-url=http://magento2.local/ 
@@ -98,6 +98,9 @@ php bin/magento setup:install
 	--sales-order-increment-prefix="ORD$" 
 	--session-save=db 
 	--use-rewrites=1
+	--search-engine=elasticsearch7 
+	--elasticsearch-host=localhost 
+	--elasticsearch-port=9200
 ```
 
 Change permission
